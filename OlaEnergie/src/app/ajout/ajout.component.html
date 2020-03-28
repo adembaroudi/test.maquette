@@ -1,0 +1,82 @@
+<br>
+<br>
+
+<div class="example-container mx-4 col-12">
+  <form [formGroup]="index">
+      <h3>INDEX</h3>
+      <mat-form-field appearance="outline">
+        <mat-label>GASOIL 1</mat-label>
+        <input matInput type="number" formControlName="GAO1" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> GASOIL 2</mat-label>
+        <input matInput type="number" formControlName="GAO2" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> GASOIL 3 </mat-label>
+        <input matInput type="number" formControlName="GAO3" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>GASOIL 4 </mat-label>
+        <input matInput type="number" formControlName="GAO4" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>GASOIL 5 </mat-label>
+        <input matInput type="number" formControlName="GAO5" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> SANS PLOMB 1 </mat-label>
+        <input matInput type="number" formControlName="SP1" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> SANS PLOMB 2 </mat-label>
+        <input matInput type="number" formControlName="SP2" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> SANS PLOMB 3 </mat-label>
+        <input matInput type="number" formControlName="SP3" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> SANS PLOMB 4 </mat-label>
+        <input matInput type="number" formControlName="SP4" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> GASOIL 50 1 </mat-label>
+        <input matInput type="number" formControlName="GSC1" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> GASOIL 50 2 </mat-label>
+        <input matInput type="number" formControlName="GSC2" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> GASOIL 50 3 </mat-label>
+        <input matInput type="number" formControlName="GSC3" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> GASOIL 50 4</mat-label>
+        <input matInput type="number" formControlName="GSC4" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> PETROLE </mat-label>
+        <input matInput type="number" formControlName="PET" />
+      </mat-form-field>
+      <h3>FLOUS</h3>
+      <mat-form-field appearance="outline">
+        <mat-label> BONS </mat-label>
+        <input matInput type="number" formControlName="BONS" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> ROLO </mat-label>
+        <input matInput type="number" formControlName="ROLO" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> PIECES </mat-label>
+        <input matInput type="number" formControlName="PIECES" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> BILLETS </mat-label>
+        <input matInput type="number" formControlName="BILLETS" />
+      </mat-form-field>
+    <button class="btn btn-primary ml-4" mat-raised-button (click)="ADD()">ADD</button>
+  </form>
+</div>

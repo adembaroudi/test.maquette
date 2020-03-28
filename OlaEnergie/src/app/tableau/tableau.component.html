@@ -1,0 +1,96 @@
+<br>
+<br>
+<br>
+<br>
+<div  class="example-container mx-1 col-12">
+  <table class="table ">
+    <thead>
+      <tr class="bg-primary" style="color: white;" >
+        <th scope="col">Gasoil 1 </th>
+        <th scope="col">Gasoil 2</th>
+        <th scope="col">Gasoil 3</th>
+        <th scope="col">Gasoil 4</th>
+        <th scope="col">Gasoil 5</th>
+        <th scope="col">sans plomb 1</th>
+        <th scope="col">sans plomb 2</th>
+        <th scope="col">sans plomb 3</th>
+        <th scope="col">sans plomb 4</th>
+        <th scope="col">gazoil 50 1</th>
+        <th scope="col">gazoil 50 2</th>
+        <th scope="col">gazoil 50 3</th>
+        <th scope="col">gazoil 50 4</th>
+        <th scope="col">petrole</th>
+        <th scope="col">actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of mazout; let i=index  " class="bg-info" style="color: white;">
+        <td>{{row.GAO1}}</td>
+        <td>{{row.GAO2}}</td>
+        <td>{{row.GAO3}}</td>
+        <td>{{row.GAO4}}</td>
+        <td>{{row.GAO5}}</td>
+        <td>{{row.SP1}}</td>
+        <td>{{row.SP2}}</td>
+        <td>{{row.SP3}}</td>
+        <td>{{row.SP4}}</td>
+        <td>{{row.GSC1}}</td>
+        <td>{{row.GSC2}}</td>
+        <td>{{row.GSC3}}</td>
+        <td>{{row.GSC4}}</td>
+        <td>{{row.PET}}</td>
+        <td>
+          <div class="example-button-row">
+          <button mat-raised-button  class="btn btn-warning btn-lg" routerLink="../update/{{i}}" >EDIT</button>
+          <button mat-raised-button class="btn btn-danger btn-lg">DELETE</button>
+
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table ">
+    <thead>
+      <tr class="bg-primary" style="color: white;" >
+        <th scope="col">Gazoil total </th>
+        <th scope="col">sans plomb total</th>
+        <th scope="col">Gasoil 50 total</th>
+        <th scope="col">petrole total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of total; let i=index  " class="bg-info" style="color: white;">
+        <td>{{row.GAO1}}</td>
+        <td>{{row.GAO1}}</td>
+        <td>{{row.GAO1}}</td>
+        <td>{{row.GAO1}}</td>
+        <td>{{row.GAO1}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+  <table class="table ">
+    <thead>
+      <tr class="bg-primary" style="color: white;" >
+        <th scope="col">bons</th>
+        <th scope="col">rolo </th>
+        <th scope="col">pieces</th>
+        <th scope="col">billets </th>
+        <th scope="col">actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of flous; let i=index  " class="bg-info" style="color: white;">
+        <td>{{row.BONS}}</td>
+        <td>{{row.ROLO}}</td>
+        <td>{{row.PIECES}}</td>
+        <td>{{row.BILLETS}}</td>
+        <td>
+          <div class="example-button-row">
+          <button mat-raised-button  class="btn btn-warning btn-lg" routerLink="../update/{{i}}" >EDIT</button>
+          <button mat-raised-button class="btn btn-danger btn-lg">DELETE</button>
+
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
